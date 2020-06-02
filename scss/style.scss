@@ -1,0 +1,41 @@
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+.container {
+    max-width: 100%;
+    margin: auto;
+}
+
+@media (min-width: $breakpoint-sm) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: $breakpoint-md) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: $breakpoint-lg) {
+    .container {
+        max-width: 960px;
+    }   
+}

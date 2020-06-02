@@ -1,0 +1,23 @@
+{
+  "name": "wondersmile",
+  "version": "1.0.0",
+  "description": "information site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o public/styles --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wondersmiledentalclinic/info.git"
+  },
+  "author": "rrosopa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wondersmiledentalclinic/info/issues"
+  },
+  "homepage": "https://github.com/wondersmiledentalclinic/info#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
