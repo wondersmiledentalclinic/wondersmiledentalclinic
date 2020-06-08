@@ -2,6 +2,23 @@
 
 .body {
     margin-top: calc(69px + 1.5rem);
+
+    > div {
+        height: calc(100vh - calc(69px + 1.5rem));
+    }
+}
+
+#main {
+    background: blue;
+    // > img {
+    //     // width: 100%;
+    // }
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #location {
@@ -10,27 +27,33 @@
 
     > iframe {
         width: 100%;
-        height: 600px;
+        height: 100%;
     }
 
     > div {
         width: 100%;
+        height: 100%;
         padding: 1rem;
 
         display: flex;
         justify-content: center;
         flex-direction: column;     
 
-        > .directions {
-            padding-top: 3rem;
+        > div {
+            border: 5px double $primary-color;
+            padding: 3rem;
 
-            display: flex;
-            justify-content: space-around;
+            > .directions {
+                padding-top: 3rem;
     
-            text-transform: uppercase;
-
-            font-size: 24px;
-            cursor: pointer;
+                display: flex;
+                justify-content: space-around;
+        
+                text-transform: uppercase;
+    
+                font-size: 18px;
+                cursor: pointer;
+            }
         }
     }
 }
