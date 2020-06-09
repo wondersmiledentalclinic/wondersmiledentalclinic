@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .header {
     position: fixed;
     top: 0;
@@ -5,10 +7,8 @@
     background: #fff;
 
     width: 100%;
-    height: calc(64px + 1.5rem);
+    height: calc(64px + 1rem);
 
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
     margin-bottom: 5px;
 
     -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
@@ -28,13 +28,18 @@
 
 .header-brand {
     height: 100%;    
-    margin-right: 1rem;
+    padding: 0.5rem 0.5rem;;
 
     display: flex;
     align-items: center;
 
     > .label {
+        margin-top: 0;
+        margin-bottom: 0;
         margin-left: 0.5rem;
+
+        font-size: 22px;
+        font-weight: bold;
     }
 }
 
@@ -52,8 +57,10 @@
         justify-content: center;
         align-items: center;
 
+        padding-top: 0.5rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+        border-bottom: 0.5rem solid $white;
         
         cursor: pointer;
     }
@@ -62,6 +69,10 @@
     a:visited {
         color: unset;
         text-decoration: none;
+    }
+
+    > a:hover {        
+        border-bottom: 0.5rem solid $primary-color;
     }
 }
 

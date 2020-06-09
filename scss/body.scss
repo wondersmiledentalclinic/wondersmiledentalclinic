@@ -1,15 +1,16 @@
 @import './variables.scss';
 
 .body {
-    margin-top: calc(69px + 1.5rem);
+    margin-top: calc(69px + 1rem);
 
     > div {
-        height: calc(100vh - calc(69px + 1.5rem));
+        height: calc(100vh - calc(69px + 1rem));
     }
 }
 
 #main {
-    background: blue;
+    display: flex;
+    justify-content: center;
     // > img {
     //     // width: 100%;
     // }
@@ -68,6 +69,28 @@
     
         > div {
             width: 30%;
+        }
+    }
+}
+
+#footer {
+
+    border-top: 1px solid gray;
+    margin-top: 0.75rem;
+    padding: 0.75rem 1rem;
+
+    color: gray;
+    font-size: 12px;
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        > .follow {
+            display: flex;;
+            align-items: center;
         }
     }
 }
