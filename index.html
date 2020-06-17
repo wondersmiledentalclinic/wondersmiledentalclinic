@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/slideshow.css">
 
     <title>Wondersmile Dental Clinic</title>
   </head>
@@ -47,8 +48,11 @@
     </div>
 
     <div class="body">
-      <div id="main">
-        <img src="assets/wondersmile-dental-clinic-now-open-quarantine-period.jpg" alt="Open during quarantine period" />
+      <div id="main" class="slideshow">
+        <div class="prev"><i class="fas fa-caret-left"></i></div>
+        <img src="assets/wondersmile-dental-clinic-now-open-quarantine-period.jpg" alt="Open during quarantine period" class="slide fade active"/>
+        <img src="assets/wondersmile-dental-clinic-new-payment-methods.jpg" alt="Open during quarantine period" class="slide fade"/>
+        <div class="next"><i class="fas fa-caret-right"></i></div>
       </div>
 
       <div id="about">
@@ -118,6 +122,6 @@
     </div>
 
     <script src="https://kit.fontawesome.com/4712bfade2.js" crossorigin="anonymous"></script>
-
+    <script src="scripts/script.js"></script>
   </body>
 </html>

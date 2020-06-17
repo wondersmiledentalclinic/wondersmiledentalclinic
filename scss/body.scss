@@ -1,16 +1,23 @@
 @import './variables.scss';
 
+$bodyDivHeight: calc(100vh - calc(69px + 1rem));
+
 .body {
     margin-top: calc(69px + 1rem);
+    max-width: 100vw;
 
     > div {
-        height: calc(100vh - calc(69px + 1rem));
-    }
+        min-height: $bodyDivHeight;
+    } 
+}
+
+img {
+    max-width: 100vw;
 }
 
 .fb-messenger{
     position: fixed;
-    bottom: 5px;
+    bottom: 75px;
     right: 5px;
     height: unset!important;
 
@@ -26,10 +33,7 @@
 
 #main {
     display: flex;
-    justify-content: center;
-    // > img {
-    //     // width: 100%;
-    // }
+    justify-content: center;    
 }
 
 #about {
@@ -45,7 +49,7 @@
 
     > iframe {
         width: 100%;
-        height: 100%;
+        height: $bodyDivHeight;
     }
 
     > div {
