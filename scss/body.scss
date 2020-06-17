@@ -8,6 +8,22 @@
     }
 }
 
+.fb-messenger{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    height: unset!important;
+
+    font-size: 50px;
+    color: $facebook-blue!important;
+    background-color: $white;
+
+    padding: 0 10px;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
 #main {
     display: flex;
     justify-content: center;
@@ -18,6 +34,7 @@
 
 #about {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
