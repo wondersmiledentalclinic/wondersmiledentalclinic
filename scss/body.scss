@@ -5,6 +5,7 @@ $bodyDivHeight: calc(100vh - calc(69px + 1rem));
 .body {
     margin-top: calc(69px + 1rem);
     max-width: 100vw;
+    overflow: hidden;
 
     > div {
         min-height: $bodyDivHeight;
@@ -34,6 +35,7 @@ img {
 #main {
     display: flex;
     justify-content: center;    
+    height: $bodyDivHeight;
 }
 
 #about {

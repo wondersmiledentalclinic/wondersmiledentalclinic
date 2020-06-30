@@ -9,6 +9,10 @@
             
             slides.forEach(x => x.classList.remove('active'));
             slides[slideNumber].classList.add('active');
+
+            var markers = document.querySelectorAll('.slideshow > .marker > i');
+            markers.forEach(x => x.classList.remove('active'));
+            markers[slideNumber].classList.add('active');
         }
 
         function getCurrentSlideNumber(){
@@ -40,6 +44,15 @@
             next.onclick = function(){
                 goToSlide(getCurrentSlideNumber() + 1);
             }
+        }    
+        
+        var markers = document.querySelectorAll('.slideshow > .marker > i');
+        if(markers){
+            markers.forEach(m => {
+                m.onclick = function(){
+                    goToSlide(m.dataset.pg);
+                }
+            });            
         }
     }
 })();

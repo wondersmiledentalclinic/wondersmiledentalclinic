@@ -69,4 +69,21 @@
     > .slide.active {
         display: block;
     }
+
+    > .marker {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+
+      > i {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
+
+    > .marker {
+      > i.active {
+        opacity:1;
+      }
+    }
 }
